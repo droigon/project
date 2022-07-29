@@ -1,0 +1,33 @@
+@keyframes spinner {
+    0% {
+        background: url("../utils/loaders/1.png") no-repeat center center;
+      transform: rotate(0deg);
+    }
+    25% {
+        background: url("../utils/loaders/2.png") no-repeat center center;
+      transform: rotate(45deg);
+    }
+    50% {
+        background: url("../utils/loaders/3.png") no-repeat center center;
+      transform: rotate(90deg);
+    }
+    75% {
+        background: url("../utils/loaders/4.png") no-repeat center center;
+      transform: rotate(180deg);
+    }
+    100% {
+        background: url("../utils/loaders/1.png") no-repeat center center;
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 40vh;
+    height: 40vh;
+    border: 10px solid linear-gradient(to right, red, orange); /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+  .spinnerr{
+    min-height: 100vh;
+  }
